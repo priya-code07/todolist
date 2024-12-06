@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo-app">
+    <header>
+      <h1>My Todo List</h1>
+    </header>
+    <main>
+      <div class="input-container">
+        <input type="text" id="todo-input" placeholder="Add a new task..." />
+        <button id="add-button">Add</button>
+      </div>
+      <div class="filter-container">
+        <button class="filter-button" data-filter="all">All</button>
+        <button class="filter-button" data-filter="active">Active</button>
+        <button class="filter-button" data-filter="completed">Completed</button>
+      </div>
+      <ul id="todo-list"></ul>
+    </main>
+    <footer>
+      <p>Total: <span id="total-tasks">0</span> | Completed: <span id="completed-tasks">0</span> | Pending: <span id="pending-tasks">0</span></p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
